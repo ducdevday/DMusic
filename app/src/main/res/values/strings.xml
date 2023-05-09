@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DMusic</string>
+    <string name="credit">Được thực hiện bởi
+        \nNguyễn Minh Đức</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

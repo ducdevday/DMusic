@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "712329804712",
+    "project_id": "musicplayer-b04ab",
+    "storage_bucket": "musicplayer-b04ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712329804712:android:03426820d5c97da5623b9d",
+        "android_client_info": {
+          "package_name": "hcmute.edu.vn.musicplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712329804712-22bmirbjpr17erkfrkv1f5njahecej3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hcmute.edu.vn.musicplayer.adapter",
+            "certificate_hash": "4a0742ba779a6e728f6dbfff857d1f7511caca34"
+          }
+        },
+        {
+          "client_id": "712329804712-uploct0q5t094cndoc05hlca7c3jb03v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArhUExKaT-kpczPIFC_ZJJGJC-0nk7l-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712329804712-uploct0q5t094cndoc05hlca7c3jb03v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

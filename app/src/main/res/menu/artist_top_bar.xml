@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btnTopBarPlay"
+        android:title="Play"
+        android:icon="@drawable/ic_play_green"
+        app:showAsAction="ifRoom" />
+
+</menu>

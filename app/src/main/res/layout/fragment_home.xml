@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:layout_marginBottom="57dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtGreetingHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Welcome!"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/lstPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtGreetingHome"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <!--            <com.google.android.material.button.MaterialButton-->
+            <!--                android:id="@+id/btnLikedSongHome"-->
+            <!--                android:layout_width="150dp"-->
+            <!--                android:layout_height="55dp"-->
+            <!--                android:backgroundTint="@color/nav_color"-->
+            <!--                android:gravity="left|center"-->
+            <!--                android:text="Liked Songs"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="13dp" />-->
+
+            <!--            <com.google.android.material.button.MaterialButton-->
+            <!--                android:id="@+id/btnPodcastHome"-->
+            <!--                android:layout_width="150dp"-->
+            <!--                android:layout_height="55dp"-->
+            <!--                android:backgroundTint="@color/nav_color"-->
+            <!--                android:text="Podcast"-->
+            <!--                android:gravity="left|center"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="13dp"-->
+            <!--                android:layout_marginLeft="15dp" />-->
+
+            <!--            <com.google.android.material.button.MaterialButton-->
+            <!--                android:id="@+id/btnClassicalMusicHome"-->
+            <!--                android:layout_width="150dp"-->
+            <!--                android:layout_height="55dp"-->
+            <!--                android:backgroundTint="@color/nav_color"-->
+            <!--                android:text="Classical Music"-->
+            <!--                android:gravity="left|center"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="13dp"-->
+            <!--                android:layout_marginLeft="-315dp"-->
+            <!--                android:layout_marginTop="50dp" />-->
+
+            <!--            <com.google.android.material.button.MaterialButton-->
+            <!--                android:id="@+id/btnRadioHome"-->
+            <!--                android:layout_width="150dp"-->
+            <!--                android:layout_height="55dp"-->
+            <!--                android:backgroundTint="@color/nav_color"-->
+            <!--                android:text="Radio"-->
+            <!--                android:gravity="left|center"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="13dp"-->
+            <!--                android:layout_marginLeft="15dp"-->
+            <!--                android:layout_marginTop="50dp" />-->
+            <!--            <com.google.android.material.button.MaterialButton-->
+            <!--                android:id="@+id/btnUploadedSongsHome"-->
+            <!--                android:layout_width="150dp"-->
+            <!--                android:layout_height="55dp"-->
+            <!--                android:backgroundTint="@color/nav_color"-->
+            <!--                android:text="Uploaded Songs"-->
+            <!--                android:gravity="left|center"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="13dp"-->
+            <!--                android:layout_marginLeft="-315dp"-->
+            <!--                android:layout_marginTop="100dp" />-->
+
+            <!--            <com.google.android.material.button.MaterialButton-->
+            <!--                android:id="@+id/btnOtherHome"-->
+            <!--                android:layout_width="150dp"-->
+            <!--                android:layout_height="55dp"-->
+            <!--                android:backgroundTint="@color/nav_color"-->
+            <!--                android:text="Others"-->
+            <!--                android:gravity="left|center"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="13dp"-->
+            <!--                android:layout_marginLeft="15dp"-->
+            <!--                android:layout_marginTop="100dp" />-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/boxAlbumPlayer"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/imgAlbumCoverPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/slider"
+                    android:scaleType="centerCrop" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lstPlaylist">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutTopSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/txtTopSong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Top Songs"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/topSongsRecycleView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTopSong" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutTopSong">
+
+                <TextView
+                    android:id="@+id/txtTopArtist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Top Artists"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:paddingBottom="120dp"
+                    android:id="@+id/topArtistsRecycleView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:tag="topArtists"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTopArtist" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
